@@ -4,17 +4,12 @@ import { Search, Briefcase } from 'lucide-react';
 import { CircleEllipsis, Menu } from 'lucide-react';
 import {
   Select,
-  SelectContent,
-  SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 

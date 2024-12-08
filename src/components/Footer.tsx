@@ -18,7 +18,7 @@ const Footer = () => {
        
       <footer className="container max-w-[1920px] h-[744px] md:h-auto text-[#FFFFFF] bg-[#000000] mx-auto  ">
         {/* first part footer */}
-      <div className="max-w-[1170px] h-[86px] ml-8 justify-start border-b-2 border-[#FF9F0d] flex flex-col 
+      <div className="max-w-[1920px] h-[86px] ml-8 sm:justify-evenly border-b-2 border-[#FF9F0d] flex flex-col 
       flex-wrap mt-3 mx-auto sm:flex-row sm:h-auto ">
      <div className='max-w-[459px] flex flex-row flex-wrap sm:w-[250px] '>
         <h1 className='text-2xl font-bold text-[#FF9F0D] '>St

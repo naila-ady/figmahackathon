@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+
 import { Button } from "@/components/ui/button"
 import img from "../../public/assets/heroimg.png";
 import img1 from "../../public/assets/hero-bar.png";
