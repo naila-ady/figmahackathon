@@ -18,7 +18,7 @@ const Foodcategory = () => {
       <Image src={img5} alt={'photogalleryimg'} width={306} height={329} />
       
     <h1 className='text-[48px] font-bold text-[#ff9f0d]'>Ch
-         <span className=' text-[48px] font-bold text-[#ffffff]'> oose Food Iteam</span></h1>
+         <span className=' text-[48px] font-bold text-[#ffffff]'>oose Food Item</span></h1>
   </div>
 
     {/* Image Container */}
@@ -30,11 +30,11 @@ const Foodcategory = () => {
       
     </div>
   {/* clinent and customer */}
-  <div className='max-w-[1920px] h-[468px] py-10  '>
+  <div className='max-w-[1920px]  py-10 mx-auto  '>
          <Image src={imgx} alt={'menu-client-img'} width={1920} height={468} className='text-[32px] font-medium' />
         </div>
 
-        <div className='max-w-[1920px] h-[468px] py-10  '>
+        <div className='max-w-[1920px]  py-10  mx-auto '>
          <Image src={imgz} alt={'menu-client-img'} width={1920} height={468} className='text-[32px] font-medium' />
         </div>
 

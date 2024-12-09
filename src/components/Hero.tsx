@@ -8,7 +8,7 @@ import img1 from "../../public/assets/hero-bar.png";
 
   const Hero = () => {
   return (
-    <div className="max-w-[1920px] h-[950px] container py-10 flex flex-col flex-wrap sm:flex-row sm:h-auto
+    <div className="max-w-[1920px]  container py-10 flex flex-col flex-wrap md:flex-row md:h-auto
      justify-evenly bg-[#000000] mx-auto  ">
       <div className="max-w-[30px] h-[500px] ">
            <Image src={img1} alt={"hero-img"} width={26} height={182}/>

@@ -58,21 +58,21 @@ const Header = () => {
           </ul>
 
           <Sheet>
-            <SheetTrigger className="md:hidden text-[#FF9F0D]">
+            <SheetTrigger className="md:hidden text-[#FF9F0D] ">
               <Menu/>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className='bg-white'>
               <ul className="flex flex-col gap-1 list-none ">
-                <Link href={"/"} className="mr-5 text-1xl hover:text-[#003152]">
+                <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                   Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
                 </Link>
-                <Link href={"./menu"} className="mr-5 text-1xl hover:text-[#003152]">
+                <Link href={"./menu"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                   Menu
                 </Link>
-                <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#003152]">
+                <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                   Blog
                 </Link>
-                <Link href={"./pages"} className="mr-5 text-1xl hover:text-[#003152]">
+                <Link href={"./pages"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                   Pages
                 </Link>
                 <Select>
@@ -80,10 +80,10 @@ const Header = () => {
                     <SelectValue placeholder="About" />
                   </SelectTrigger>
                 </Select>
-                <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#003152]">
+                <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                   Shop
                 </Link>
-                <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#003152]">
+                <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                   Contact
                 </Link>
                 </ul>

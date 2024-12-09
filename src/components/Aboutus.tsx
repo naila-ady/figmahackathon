@@ -11,23 +11,23 @@ import img4 from '../../public/assets/about-3.png'
 const aboutus = () => {
   return (
     
-    <div className=" max-w-[1920px] h-[562px] py-2 bg-[#000000] mx-auto flex flex-col flex-wrap
-     justify-between sm:flex-row sm:h-auto sm:justify-center">
-   <div className=" max-w-[562px] h-[562px] bg-[#000000]  flex flex-col flex-wrap
+    <div className=" max-w-[1920px]  bg-[#000000] mx-auto flex flex-col flex-wrap  md:flex-row md:h-auto
+     justify-evenly">
+   <div className=" max-w-[500px]  bg-[#000000]  flex flex-col flex-wrap
     sm:flex-row justify-between">
   {/* < About Us   */}
-  <div className=" max-w-[446px] h-[90px] px-4 bg-[#000000]  flex flex-col flex-wrap
+  <div className=" max-w-[446px]  px-4 bg-[#000000]  flex flex-col flex-wrap
     sm:flex-row justify-between ">
-    <Image src={img1} alt={'about'} width={91} height={40} className='text-[32px] font-medium'/>
-    <h1 className=" w-[446px] h-[110px] text-4xl font-bold text-[#FF9F0D]">We<span className="text-4xl font-bold text-[#FFFFFF]"> 
+    <Image src={img1} alt={'about'} width={91} height={40}/>
+    <h1 className=" w-[446px]  text-4xl font-bold text-[#FF9F0D]">We<span className="text-4xl font-bold text-[#FFFFFF]"> 
     Create the Best <br/> Foody Product</span></h1>
 
   </div>
 
 
   {/* <!-- Paragraph --> */}
-  <div className=" w-[526px] h-[130px]  text-white px-4">
-    <p className="text-lg leading-7">
+  <div className=" max-w-[500px]  text-white px-4  sm:mx-auto">
+    <p className="text-lg ">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat
        fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed
         vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
@@ -43,15 +43,14 @@ const aboutus = () => {
  </div>
 
 
-<div className=' max-w-[562px] h-[562px] bg-[#000000]  flex flex-row  flex-wrap
-    sm:flex-row justify-between '>
+<div className=' max-w-[500px]  bg-[#000000]  flex sm:flex-col sm:mx-auto
+     justify-center '>
   {/* <!-- Image 1  */}
-  <div className=" w-[660px] h-[330px] bg-cover bg-center rounded-lg">
-  <Image src={img2} alt={"hero-img"} width={660} height={330} />
+  <div className="max-w-[500px] bg-cover bg-center rounded-lg">
+  <Image src={img2} alt={"hero-img"} width={562} height={330} />
   </div>
 
-    <div className=' max-w-[562px] h-[194px] bg-[#000000]  flex flex-row  flex-wrap
-    sm:flex-row  '>
+    <div className=' max-w-[500px]  bg-[#000000]  flex '>
   {/*  Image 2 */}
   <div className="  bg-cover bg-center rounded-lg">
   <Image src={img3} alt={"hero-img"} width={280} height={194} />
