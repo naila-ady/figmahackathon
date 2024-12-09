@@ -3,7 +3,7 @@ import Image from 'next/image';
 import img8 from "../../public/assets/ClockClockwise.png"; 
 import imga from "../../public/assets/unsplash_CLMpC9UhyTo (1).png"; 
 import imgd from "../../public/assets/footerimg.png";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs,  TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {Facebook ,Twitter ,Instagram ,Youtube ,Podcast } from "lucide-react";
 import Link from 'next/link';
 
