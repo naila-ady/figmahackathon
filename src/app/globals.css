@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-custom {
+    background-image: url('/assets/menu-hero.png');
+    background-size: cover;
+    background-position: center; 
+}
+  
