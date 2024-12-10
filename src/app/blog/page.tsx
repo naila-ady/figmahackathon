@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Blog = () => {
   return (
-    <div>
+    <div className='max-w-[1920px] mx-auto'>
       <div className="bg-custom h-[410px] max-w-[1920px]">
          <h1 className="text-white text-center text-4xl pt-40">Blog List</h1>
            <ul className='text-[16px] text-[#FFFFFF] flex justify-center gap-1 list-none'>
@@ -21,11 +21,12 @@ const Blog = () => {
              
 
         
-      <div className=' max-w-[1920px] flex flex-row gap-8 px-14 justify-center '>
+      <div className=' max-w-[1920px] flex flex-col max-auto md:flex-row   '>
         <Mainblog/>
         <Sidebarblog/>
       </div>
     </div>
+    
   )
 }
 

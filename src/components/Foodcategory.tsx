@@ -12,8 +12,8 @@ import imgz from "../../public/assets/restaur.png"
 const Foodcategory = () => {
   return (
     <div>
-        <div className='max-w-[1920px] flex flex-wrap border-2 border-[#E0E0E0] justify-evenly py-4 gap-6 
-        bg-[#0D0D0D]  px-2'>
+        <div className='max-w-[1920px]  flex flex-wrap justify-evenly py-4 gap-6 
+        bg-[#0D0D0D]  px-2 mx-auto'>
   <div className=''>
       <Image src={img5} alt={'photogalleryimg'} width={306} height={329} />
       

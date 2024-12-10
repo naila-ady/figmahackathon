@@ -33,14 +33,14 @@ const Menu = () => {
           </div>
 
 
-       <div className='max-w-[1920px] py-10 px-12 flex flex-col flex-wrap
-       justify-evenly md:flex-row'>
+       <div className='max-w-[1920px] py-10  flex flex-col flex-wrap
+       justify-evenly md:flex-row '>
         {/* starter menu */}
-         <div className='w-[448px] h-[670px]'>
+         <div className='max-w-[448px]  mx-auto'>
           <Image src={imge} alt={'menu-hero'} width={450} height={523} className='text-[32px] font-medium' />
         </div>
 
-        <div className='max-w-[768px]  flex flex-col pt-14 gap-8'>
+        <div className='max-w-[768px]  flex flex-col pt-14 gap-8 mx-auto'>
           <div className='max-w-[768px] '>
             <h1 className='text-[#FF9F0D]'><Coffee /></h1>
             <h1 className='text-[48px] font-bold text-[#333333] '>Starter Menu</h1>
@@ -77,10 +77,10 @@ const Menu = () => {
       
 {/* main course */}
 
-<div className='max-w-[1920px] py-10 px-12 flex flex-col flex-wrap
-       justify-evenly md:flex-row '>
+<div className='max-w-[1920px] py-10 flex flex-col flex-wrap
+       justify-evenly md:flex-row  mx-auto'>
 
-        <div className='max-w-[768px] flex flex-col pt-14 gap-8 '>
+        <div className='max-w-[768px] flex flex-col pt-14 gap-8 mx-auto '>
           <div className='max-w-[768px] '>
             <h1 className='text-[#FF9F0D]'><Coffee /></h1>
             <h1 className='text-[48px] font-bold text-[#333333] '>Main Course</h1>
@@ -117,7 +117,7 @@ const Menu = () => {
           </div>
          </div>
 
-         <div className='w-[448px] h-[670px]'>
+         <div className='max-w-[448px]  mx-auto'>
          <Image src={imgf} alt={'menu-2-img'} width={450} height={523} className='text-[32px] font-medium' />
         </div>
               </div>
@@ -125,18 +125,18 @@ const Menu = () => {
 
 
          {/* clinent and customer */}
-              <div className='max-w-[1920px] h-[468px] py-10  '>
+              <div className='max-w-[1920px]  py-10 mx-auto  '>
          <Image src={imgg} alt={'menu-client-img'} width={1920} height={468} className='text-[32px] font-medium' />
         </div>
 
       {/*deserts  */}
 
-      <div className='max-w-[1920px] py-10 px-12 flex flex-col flex-wrap
+      <div className='max-w-[1920px] py-10  flex flex-col flex-wrap
        justify-evenly md:flex-row'>
-         <div className='w-[448px] h-[670px]'>
+         <div className='max-w-[448px]  mx-auto'>
           <Image src={imgi} alt={'menu-hero'} width={450} height={523} className='text-[32px] font-medium' />
         </div>
-        <div className='max-w-[768px]  flex flex-col pt-14 gap-8 '>
+        <div className='max-w-[768px]  flex flex-col pt-14 gap-8 mx-auto '>
           <div className='max-w-[768px] '>
             <h1 className='text-[#FF9F0D]'><Coffee /></h1>
             <h1 className='text-[48px] font-bold text-[#333333] '>Deserts</h1>
@@ -178,10 +178,10 @@ const Menu = () => {
     
       
          {/* drinks */}
-        <div className='max-w-[1920px] py-10 px-12 flex flex-col flex-wrap
+        <div className='max-w-[1920px] py-10  flex flex-col flex-wrap
        justify-evenly md:flex-row '>
 
-        <div className='max-w-[768px] flex flex-col pt-14 gap-8 '>
+        <div className='max-w-[768px] flex flex-col pt-14 gap-8 mx-auto '>
           <div className='max-w-[768px] '>
             <h1 className='text-[#FF9F0D]'><Coffee /></h1>
             <h1 className='text-[48px] font-bold text-[#333333] '>Drinks</h1>
@@ -219,7 +219,7 @@ const Menu = () => {
           </div>
          </div>
 
-         <div className='w-[448px] h-[670px]'>
+         <div className='max-w-[448px] mx-auto'>
          <Image src={imgh} alt={'menu-2-img'} width={450} height={523} className='text-[32px] font-medium' />
         </div>
               </div>
@@ -230,7 +230,7 @@ const Menu = () => {
                   <p className='text-[18px] font-normal text-[#333333] ml-48'>Partners & Clients</p>
                   <h1 className='text-[48px] font-bold text-[#333333] '>We work with the best pepole</h1>
                 </div>
-              <div className='max-w-[1920px] '>
+              <div className='max-w-[1920px] mx-auto '>
          <Image src={imgj} alt={'menu-2-img'} width={1920} height={129} />
         </div>
          </div>

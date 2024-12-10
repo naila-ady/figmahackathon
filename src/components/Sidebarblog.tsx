@@ -26,33 +26,32 @@ import img6 from "../../public/assets/photogallery6.png"
 const Sidebarblog = () => {
     return (
 
-
-        <div className=" ">
-            <div className='relative py-1 inline-flex mt-8  justify-center'>
+        <div className='max-w-[1920px] mx-auto '>
+        <div className="max-w-[424px] mx-auto flex flex-col space-y-10 ">
+            <div className='relative  inline-flex mt-8  justify-center'>
                 <input
                     type="text"
                     placeholder='Search your keyword'
                     className=' rounded-lg h-16 pt-3 pr-3 pb-2 pl-5 font-[inter] text-[16px]
                  border-[#e0e0e0] border-2 bg-[#ffffff] w-[424px]'/>
-                <Search className="absolute w-8 h-14 bg-[#ff9f0d] left-48 top-5 transform -translate-y-3 text-[#FFFFFF]" />
+                <Search className="absolute w-14 h-14 bg-[#ff9f0d]  top-1/4 right-1 transform -translate-y-3 text-[#FFFFFF]" />
             </div>
-
-            <div className="max-w-[424px] h-[830px] border-2 border-[#E0E0E0] 
+            <div className="max-w-[424px] border-2 border-[#E0E0E0] 
              flex flex-col py-12 sm:h-auto justify-evenly items-center bg-[#ffffff] mx-auto">
                 
 
                 {/* Image Section */}
-                <div className="max-w-[170px] mt-2">
+                <div className="max-w-[170px] py-2">
                     <Image src={imgo} alt={"hero-img"} width={150} height={150} className='rounded-full mx-auto' />
                 </div>
 
                 {/* Text Section */}
-                <div className="max-w-[424px] text-[16px] text-center mt-6">
+                <div className="max-w-[424px] text-[16px] text-center py-2">
                     <h1 className="text-[#333333] font-normal text-2xl">Prince Miyako</h1>
-                    <p className='max-w-[472px] font-light text-[#4F4F4F] text-base mt-2 sm:text-md'>
+                    <p className='max-w-[472px] font-light text-[#4F4F4F] text-base py-2 '>
                         Blogger/Photographer
                     </p>
-                    <p className="max-w-[424px] font-light text-[#4F4F4F] text-base mt-2 sm:text-md">
+                    <p className="max-w-[424px] font-light text-[#4F4F4F] text-base py-2">
                         
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et<br />
                         dolore magna aliquyam erat
@@ -60,68 +59,70 @@ const Sidebarblog = () => {
                 </div>
 
                 {/* Social Media Section */}
-                <div className="flex items-center flex-wrap mt-6 justify-center">
-                    <h2 className="text-[60px] font-bold text-[#ff9f0d] sm:text-base inline-flex gap-3">
+                <div className="flex items-center flex-wrap py-6 justify-center">
+                    <h2 className="text-[60px] font-bold text-[#ff9f0d]  inline-flex gap-3">
                         <span className='text-[#FF9F0D]'><Facebook /></span>
-                        <Instagram />
+                     <span className='text-[#ff9f0d]'><Instagram/></span>
                         <span className='text-[#FF9F0D]'><Twitter /></span>
                         <span className='text-[#FF9F0D]'><Podcast /></span>
-                        <Youtube />
+                        <span className='text-[#FF9F0D]'> <Youtube /></span>
                     </h2>
                 </div>
             </div>
 
 
             {/* recent posts */}
-
-            <div className='max-w-[423px] border-2 border-[#E0E0E0] py-6  '>
-             <h1 className='text-[20px] font-bold text-[#333333] ml-8'>Recent Post</h1>
-                   <div className='max-w-[423px] py-2 flex flex-col flex-wrap justify-evenly md:flex-row '>
-                <div className='w-[110px] h-[92px]'>
+            <div className='max-w-[423px] border-2 border-[#E0E0E0] py-6 '>
+             <h1 className='text-[20px] font-bold text-[#333333]  ml-8'>Recent Post</h1>
+            <div className='max-w-[423px]  py-3 border-b-2 border-[#E0E0E0] '>
+                   <div className='max-w-[423px] py-2 flex justify-evenly  mx-auto'>
+                <div className='w-[110px]'>
                     <Image src={imgq} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
-                <div className='max-w-[205px] flex flex-col '>
+                <div className='max-w-[205px] flex flex-col py-2 '>
                     <h2 className='text-[14px] font-normal text-[#828282]  justify-between w-full '>
                         June 22, 2020</h2>
-                    <p className='text-[16px] font-normal text-[#4F4F4f] border-b-2 border-[#E0E0E0]'>Lorem ipsum dolor sit cing
+                    <p className='text-[16px] font-normal text-[#4F4F4f] '>Lorem ipsum dolor sit cing
                         elit, sed do.</p>
                     </div>
+                </div>
                 </div>
             
             {/* 2nd */}
-            <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
-                    <Image src={imgr} alt={'photogalleryimg'} width={110} height={92} className='text-[32px] font-medium' />
+            <div className='max-w-[423px]  py-3 border-b-2 border-[#E0E0E0] flex justify-evenly  mx-auto '>
+                            <div className='w-[110px] '>
+                    <Image src={imgr} alt={'photogalleryimg'} width={110} height={92}/>
                 </div>
-                <div className='max-w-[205px] flex flex-col '>
-                    <h2 className='text-[14px] font-normal text-[#828282]  justify-between  w-full '>
+                <div className='max-w-[205px] flex flex-col py-2 '>
+                    <h2 className='text-[14px] font-normal text-[#828282] justify-between  w-full '>
                         June 22, 2020</h2>
-                    <p className='text-[16px] font-normal text-[#4F4F4f] border-b-2 border-[#E0E0E0]'>Lorem ipsum dolor sit cing
+                    <p className='text-[16px] font-normal text-[#4F4F4f] '>Lorem ipsum dolor sit cing
                         elit, sed do.</p>
                     </div>
                 </div>
+
                    {/* 3rd */}
-            <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
-                    <Image src={imgs} alt={'photogalleryimg'} width={110} height={92} className='text-[32px] font-medium' />
+            <div className='max-w-[423px]  flex justify-evenly border-b-2 border-[#E0E0E0] py-3 mx-auto'>
+                <div className='w-[110px] '>
+                    <Image src={imgs} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
                 <div className='max-w-[205px] flex flex-col '>
                     <h2 className='text-[14px] font-normal text-[#828282]  justify-between  w-full '>
                         June 22, 2020</h2>
-                    <p className='text-[16px] font-normal text-[#4F4F4f] border-b-2 border-[#E0E0E0]'>Lorem ipsum dolor sit cing
+                    <p className='text-[16px] font-normal text-[#4F4F4f] '>Lorem ipsum dolor sit cing
                         elit, sed do.</p>
                     </div>
                 </div>
 
                    {/* 4th */}
-            <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
-                    <Image src={imgt} alt={'photogalleryimg'} width={110} height={92} className='text-[32px] font-medium' />
+            <div className='max-w-[423px] flex justify-evenly border-b-2 border-[#E0E0E0] py-3'>
+                <div className='w-[110px] '>
+                    <Image src={imgt} alt={'photogalleryimg'} width={110} height={92}/>
                 </div>
                 <div className='max-w-[205px] flex flex-col '>
                     <h2 className='text-[14px] font-normal text-[#828282]  justify-between  w-full '>
                         June 22, 2020</h2>
-                    <p className='text-[16px] font-normal text-[#4F4F4f] border-b-2 border-[#E0E0E0]'>Lorem ipsum dolor sit cing
+                    <p className='text-[16px] font-normal text-[#4F4F4f]'>Lorem ipsum dolor sit cing
                         elit, sed do.</p>
                     </div>
                 </div>
@@ -132,8 +133,8 @@ const Sidebarblog = () => {
 
             <div className='max-w-[423px] border-2 border-[#E0E0E0] py-6  '>
              <h1 className='text-[20px] font-bold text-[#333333] ml-8'>Filter by Menu</h1>
-                   <div className='max-w-[423px] py-2 flex flex-col flex-wrap justify-evenly md:flex-row '>
-                <div className='w-[110px] h-[92px]'>
+                   <div className='max-w-[423px] py-2 flex  justify-evenly '>
+                <div className='w-[110px]'>
                     <Image src={imgu} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
                 <div className='max-w-[205px] inline-flex gap-10 items-center'>
@@ -143,8 +144,8 @@ const Sidebarblog = () => {
                 </div>
             
             {/* 2nd */}
-            <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
+            <div className='max-w-[423px] flex  justify-evenly py-2'>
+                <div className='w-[110px] '>
                     <Image src={imgv} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
                 <div className='max-w-[205px] inline-flex gap-10 items-center '>
@@ -154,8 +155,8 @@ const Sidebarblog = () => {
                                         </div>
                 </div>
                    {/* 3rd */}
-            <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
+            <div className='max-w-[423px] flex justify-evenly py-2'>
+                <div className='w-[110px]'>
                     <Image src={imgw} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
                 <div className='max-w-[205px] inline-flex gap-10 items-center '>
@@ -167,8 +168,8 @@ const Sidebarblog = () => {
                 </div>
 
                    {/* 4th */}
-            <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
+            <div className='max-w-[423px] flex  justify-evenly  py-2'>
+                <div className='w-[110px] '>
                     <Image src={imgx} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
                 <div className='max-w-[205px] inline-flex items-center gap-10'>
@@ -178,8 +179,8 @@ const Sidebarblog = () => {
                      </div>
                 </div>
 
-                <div className='max-w-[423px] flex flex-col flex-wrap justify-evenly  md:flex-row py-2'>
-                <div className='w-[110px] h-[92px]'>
+                <div className='max-w-[423px] flex justify-evenly py-2'>
+                <div className='w-[110px]'>
                     <Image src={imgy} alt={'photogalleryimg'} width={110} height={92} />
                 </div>
                 <div className='max-w-[205px] inline-flex gap-10 items-center'>
@@ -209,10 +210,10 @@ const Sidebarblog = () => {
     </div>
   </div>
      {/* sociallinks */}
-      <div className='max-w-[422px] h-[158px] flex-col flex-wrap border-2 border-[#E0E0E0]
-         py-8'>
-            <h1 className=' max-w-[422px] text-[#333333] text-[20px] font-bold flex justify-center'>Follow Us</h1>
-      <div className='max-w-[422px] h-[158px] inline-flex px-16 gap-8'>     
+      <div className='max-w-[422px] h-[158px] flex flex-col py-10  border-2 border-[#E0E0E0]
+         '>
+     <h1 className=' max-w-[422px] text-[#333333] text-[20px] font-bold mx-auto '>Follow Us</h1>
+      <div className='max-w-[422px]  inline-flex mx-auto  gap-8'>     
       <Twitter className='bg-red-100 text-[#333333]'  />
       <Youtube className='bg-red-100 text-[#333333]' />
       <Podcast className='bg-[#ff9f0d] text-[#ffffff]' />
@@ -223,7 +224,7 @@ const Sidebarblog = () => {
 
       
 </div>
-
+</div>
 
 
         

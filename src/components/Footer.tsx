@@ -18,23 +18,31 @@ const Footer = () => {
        
       <footer className="container max-w-[1920px]  md:h-auto text-[#FFFFFF] bg-[#000000] mx-auto  ">
         {/* first part footer */}
-      <div className="max-w-[1920px]  ml-8 sm:justify-evenly border-b-2 border-[#FF9F0d] flex flex-col 
-      flex-wrap mt-3 mx-auto sm:flex-row sm:h-auto ">
-     <div className='max-w-[459px] flex flex-row flex-wrap '>
+      <div className="max-w-[1920px]  justify-evenly border-b-2 border-[#FF9F0d] flex flex-row 
+       mt-3 mx-auto  ">
+     <div className='max-w-full flex sm:flex-col  '>
         <h1 className='text-2xl font-bold text-[#FF9F0D] '>St
           <span className='text-2xl text-[#FFFFFF]'>ill You Need Our Support ?</span>
         </h1>
-        <p className='text-[#FFFFFF] text-base font-normal '>Don’t wait make a smart & logical quote here. Its pretty easy.</p>
+        <p className='text-[#FFFFFF] text-base font-normal '>Don’t wait make a smart & logical quote here.
+           Its pretty easy.</p>
       </div>
       
-          <div  className=' max-w-[128px]  '>      
-      <Tabs defaultValue="account" className=" border-[#FF9F0D]">
-  <TabsList  className='border-[#FF9F0D]'>
-    <TabsTrigger value="account" className= 'bg-[#FF9f0D] text-[#FFFFFF]'>Enter Your Email</TabsTrigger>
-    <TabsTrigger value="password" className='bg-[#FFFFFF] text-[#FF9f0D]'>Subscribe Now</TabsTrigger>
-  </TabsList>
-</Tabs>
+
+<div className="max-w-[300px]  py-2 ">
+      <div className="flex items-center w-full  bg-[#FFFFFF] border border-[#FF9F0D] rounded-md">
+        <input
+          type="email"
+          className="w-full p-2 border-none"
+          placeholder="Enter your email"
+        />
+        <button className="bg-[#FF9F0D] text-white px-4 py-2 rounded-r-md">
+          Subscribe
+        </button>
       </div>
+    </div>
+
+
     </div>
 
 
