@@ -7,6 +7,8 @@ import img4 from "../../public/assets/foodcateg4.png"
 import img5 from "../../public/assets/Food Categorymain.png"
 import imgx from "../../public/assets/menu-3.png"
 import imgz from "../../public/assets/restaur.png"
+import Ustext from "../components/Us"
+import Ourchefs from './Ourchefs';
 
 
 const Foodcategory = () => {
@@ -29,6 +31,11 @@ const Foodcategory = () => {
       <Image src={img4} alt={'photogalleryimg'} width={306} height={329} />
       
     </div>
+
+    <Ustext/>
+    <Ourchefs/>
+
+
   {/* clinent and customer */}
   <div className='max-w-[1920px]  py-10 mx-auto  '>
          <Image src={imgx} alt={'menu-client-img'} width={1920} height={468} className='text-[32px] font-medium' />
