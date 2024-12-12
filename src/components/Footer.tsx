@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div>
+    
       
       
       
@@ -177,7 +177,7 @@ const Footer = () => {
     </div>
   </div>
 </footer>
-</div>
+
   )
 }
 

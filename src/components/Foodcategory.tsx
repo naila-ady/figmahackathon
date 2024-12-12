@@ -9,13 +9,14 @@ import imgx from "../../public/assets/menu-3.png"
 import imgz from "../../public/assets/restaur.png"
 import Ustext from "../components/Us"
 import Ourchefs from './Ourchefs';
+import Choosepick from './Choosepick';
 
 
 const Foodcategory = () => {
   return (
-    <div>
-        <div className='max-w-[1920px]  flex flex-wrap justify-evenly py-4 gap-6 
-        bg-[#0D0D0D]  px-2 mx-auto'>
+    
+        <div className='max-w-[1920px]  flex flex-row flex-wrap justify-evenly py-4 
+        bg-[#0D0D0D] mx-auto'>
   <div className=''>
       <Image src={img5} alt={'photogalleryimg'} width={306} height={329} />
       
@@ -31,24 +32,24 @@ const Foodcategory = () => {
       <Image src={img4} alt={'photogalleryimg'} width={306} height={329} />
       
     </div>
-
-    <Ustext/>
-    <Ourchefs/>
+      {/* <Choosepick/> */}
+    {/* <Ustext/> */}
+    {/* <Ourchefs/> */}
 
 
   {/* clinent and customer */}
-  <div className='max-w-[1920px]  py-10 mx-auto  '>
+  {/* <div className='max-w-[1920px]  py-10 mx-auto  '>
          <Image src={imgx} alt={'menu-client-img'} width={1920} height={468} className='text-[32px] font-medium' />
-        </div>
+        </div> */}
 
-        <div className='max-w-[1920px]  py-10  mx-auto '>
+        {/* <div className='max-w-[1920px]  py-10  mx-auto '>
          <Image src={imgz} alt={'menu-client-img'} width={1920} height={468} className='text-[32px] font-medium' />
         </div>
-
+ */}
         
   </div>
  
-    </div>
+    
   )
 }
 

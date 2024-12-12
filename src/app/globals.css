@@ -8,3 +8,8 @@
     background-position: center; 
 }
   
+.bg-custom1 {
+    background-image: url('/assets/restaur.png');
+    background-size: cover;
+    background-position: center; 
+}

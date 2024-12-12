@@ -16,13 +16,13 @@ import img10 from "../../public/assets/recent-2.png"
 
 const Ustext = () => {
   return (
-    <div className='max-w-[1920px]  flex flex-col lg:flex-row bg-[#000000] mx-auto'>
+    <div className='max-w-[1920px] flex flex-col md:flex-row  bg-[#000000]  mx-auto'>
 
       {/* Photo Gallery Section */}
 
-      <div className="max-w-[1920px] py-10">
+      <div className="max-w-[950px] py-10 mx-auto">
   {/* Image Container */}
-  <div className="grid grid-cols-3 gap-4">
+  <div className="grid grid-cols-3 gap-1">
     {/* Image 1 - takes 2 columns */}
     <div className="col-span-2">
       <Image
@@ -85,12 +85,12 @@ const Ustext = () => {
     
          
          {/* text section */}
-      <div className="max-w-[1920px]  flex flex-col mx-auto  py-10 bg-[#000000] ">
-        <div className="max-w-[433px] text-[16px] py-2 ">
-          <h1 className="text-[#FF9F0D] font-normal text-2xl py-4  ">
+      <div className="max-w-[950px]  mx-auto flex flex-col py-6 bg-[#000000] justify-start ">
+        <div className="max-w-[526px] text-[16px] py-2 ">
+          <h1 className="text-[#FF9F0D] font-normal text-2xl py-4">
          <Image src={img1} alt={"hero-img"} width={249} height={182} /></h1>
-          <h2 className=" max-w-[433px] text-[48px] font-bold text-[#FF9F0D] py-2 ">
-            Ex<span className=' text-[60px] font-bold text-[#FFFFFF]'>tra ordinary taste
+          <h2 className=" max-w-[433px] text-[48px] font-bold text-[#FF9F0D] py-2  ">
+            Ex<span className=' text-[48px] font-bold text-[#FFFFFF]'>tra ordinary taste
               And Experienced </span>
           </h2>
           <p className=" max-w-[526px] font-light text-[#fFFFFF] text-base py-4 ">
@@ -101,8 +101,8 @@ const Ustext = () => {
               </div>
 
           {/* logo Section */}
-          <div className='max-w-[433px]  flex gap-4 py-2   '>
-            <div className='  '>
+          <div className='max-w-[526px] flex gap-12 py-2'>
+                <div className='  '>
 
               <h1 className='bg-[#ff9f0d]'> <Image src={img2} alt={"hero-img"} width={56} height={56} /></h1>
               <h1 className='text-[#ffffff]'>Fast Food</h1>
@@ -115,24 +115,17 @@ const Ustext = () => {
               <h1 className='bg-[#ff9f0d] text-[#333333]'> <Image src={img4} alt={"hero-img"} width={56} height={56} /></h1>
               <h1 className='text-[#ffffff]'>Dinner</h1></div>
           </div>
-          
-
 
                {/* button */}
-          
-            <Button className="bg-[#FFffff] rounded-sm  max-w-[374px] h-[93px] text-sm text-[#FFFFFF] " >
+               <div className='max-w-[526px] py-2'>
+ 
+           <Button className="bg-[#FFffff] rounded-sm  max-w-[374px] h-[93px] text-sm text-[#FFFFFF]  " >
               <h2 className=" text-[24px] font-bold text-[#FF9F0D] ">
-                30+<span className=' text-[24px] font-bold text-[#1E1E1E]'>Years of Experienced </span> </h2></Button>
-          
-        </div>
-
-
-
-        
-
-
-
-      </div>
+                30+<span className=' text-[24px] font-bold text-[#1E1E1E]'>Years of Experienced </span>
+                 </h2></Button> 
+          </div>
+           </div> 
+          </div>
 
 
     
