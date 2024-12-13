@@ -59,10 +59,10 @@ const page = () => {
                 </ul>
             </div>
             {/* mainfolder */}
-             <div className='max-w-[1920px] flex'>
+             <div className='max-w-[1920px]  mx-auto flex flex-wrap'>
                 {/* Image Container */}
-                <div className='max-w-[912px] gap-2 bg-[#ffffff] mx-auto py-6'>
-                    <div className='max-w-[700px] flex gap-6'>
+                <div className='max-w-[812px] mx-auto bg-[#ffffff] py-6'>
+                    <div className='max-w-[700px] flex-col sm:flex-row gap-6 '>
                         <Select>
                             <h1 className='text-[#333333]'>Sort By:</h1>
                             <SelectTrigger className="w-[236px] border-[#e0e0e0] text-[#e0e0e0]">
@@ -87,7 +87,8 @@ const page = () => {
                             </SelectContent>
                         </Select>
                     </div>
-                    <div className='grid grid-cols-3 gap-6 items-center '>
+                    
+                    <div className='grid sm:grid-cols-3 gap-6  items-center grid-cols-1 '>
                         <div className='max-w-[312px]'>
                             <Image src={img1} alt={'photogalleryimg'} width={312} height={267} />
                             <h1 className='text-lg font-bold text-[#333333]'>Fresh Lime</h1>
@@ -201,24 +202,24 @@ const page = () => {
                     </div>
 
                 </div> 
-            </div>
+        
 
 
                    {/* sidemenu */}
-            <div className='max-w-[612px] mx-auto bg-yellow-100'>
+            <div className='max-w-[712px] mx-auto py-14 '>
 
                 {/* Search section */}
-                <div className='relative py-1 inline-flex gap-4'>
+                <div className='relative py-1 m inline-flex gap-4 mx-auto '>
                     <input
                         type="text"
                         placeholder='Search...'
                         className=' h-8 pt-3 pr-3 pb-2 pl-5 gap-[10px] font-[inter] text-[16px]
-border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF]'/>
-                    <Search className="absolute right-0 top-1/2 transform -translate-y-3 text-[#FFFFFF] bg-[#ff9f0d]" />
+border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF] '/>
+                    <Search className=" absolute right-0 top-1/2 transform -translate-y-3 text-[#FFFFFF] bg-[#ff9f0d]" />
                 </div>
 
                 {/* checkbox */}
-                <div className='max-w-[248px] text-[#333333]'>
+                <div className='max-w-[248px] text-[#333333] px-6'>
                     <h1 className='text-xl font-bold text-[#333333]'>Category</h1>
                     <h1 className='text-lg font-normal'> <Checkbox /> Sandwiches</h1>
                     <h1 className='text-lg font-normal'> <Checkbox /> Burger</h1>
@@ -229,17 +230,17 @@ border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF]'/>
                     <h1 className='text-lg font-normal'> <Checkbox /> Non VEG</h1>
                     <h1 className='text-lg font-normal'> <Checkbox /> Uncategorized</h1>
                 </div>
-                <div className='max-w-[248px] gap-6'>
+                <div className='max-w-[248px] gap-6 px-6'>
                     <Image src={imga} alt={"banner"} width={248} height={256} />
                     <h1 className='text-xl font-bold text-[#333333]'>Filter By Price</h1>
                     <h1 className='text-[#ff9f0d] max-w-[246px] px-2'><Slider defaultValue={[33]} max={100} step={1}
                         className='bg-[#ff9f0d] ' /></h1>
                 </div>
                 {/* Latest Products */}
-                <div className='max-w-[423px] py-6 '>
-                    <h1 className='text-[20px] font-bold text-[#333333]  ml-8'>Latest Products</h1>
-                    <div className='max-w-[423px]  py-3 border-b-2 border-[#E0E0E0] '>
-                        <div className='max-w-[423px] py-2 flex justify-evenly  mx-auto'>
+                <div className='max-w-[423px] py-6 px-6'>
+                    <h1 className='text-[20px] font-bold text-[#333333]'>Latest Products</h1>
+                    <div className='max-w-[423px]  py-3 border-b-2 border-[#E0E0E0] mx-auto '>
+                        <div className='max-w-[423px] py-2 flex justify-evenly  '>
                             <div className='w-[110px]'>
                                 <Image src={imgb} alt={'photogalleryimg'} width={110} height={92} />
                             </div>
@@ -302,8 +303,10 @@ border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF]'/>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    
                     {/* Product tags */}
-                    <div className='max-w-[256px]'>
+                    <div className='max-w-[256px] px-6'>
                         <h1 className='text-xl font-bold text-[#333333]'>Product Tags </h1>
                         <div className=' max-w-[256px] flex flex-row flex-wrap gap-4 '>
                             <p className='text-base font-normal text-[#4f4f4f] border-b-2 border-[#f2f2f2]'>Services</p>
@@ -314,14 +317,14 @@ border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF]'/>
                             <p className='text-base font-normal text-[#4f4f4f] border-b-2 border-[#f2f2f2]'>Cookies</p>
                             <p className='text-base font-normal text-[#4f4f4f] border-b-2 border-[#f2f2f2]'>Our Shop</p>
                             <p className='text-base font-normal text-[#4f4f4f] border-b-2 border-[#f2f2f2]'>Tandoori Chicken</p>
-
                         </div>
                     </div>
+
                 </div>
             </div>
+</div>
 
-
-        </div>
+        
     )
 }
 

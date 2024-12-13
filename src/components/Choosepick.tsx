@@ -93,9 +93,8 @@ const Choosepick = () => {
                             <div className='w-[80px]'>
                     <Image src={imge} alt={'photogalleryimg'} width={80} height={79} />
                 </div>
-                <div className='max-w-[287px] flex flex-col  '>
-                    <h2 className='text-[20px] font-bold text-[#fffffff] '>
-                    Mild Butter</h2>
+                <div className='max-w-[287px] flex flex-col '>
+                    <h2 className='text-[20px] font-bold text-[#ffffff]'>Mild Butter</h2>
                     <p className='text-[14px] font-normal text-[#ffffff] '>Lacus nisi, et ac dapibus velit in consequat.</p>
                     <p className='text-[18px] font-bold text-[#ff9f0d] '>12.5$</p>
                     </div>

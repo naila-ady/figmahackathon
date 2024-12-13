@@ -19,7 +19,7 @@ const Menuclient = () => {
                         <Image src={img1} alt={'about'} width={273} height={43} />
                         <h1 className="max-w-[705px] text-5xl font-bold text-[#FF9F0D]">We
                             <span className="text-5xl font-bold text-[#FFFFFF]">
-                                Document Every Food Bean Process untile it is saved</span></h1>
+                                Document Every Food Bean Process until it is saved</span></h1>
                     </div>
 
                     {/* <!-- Paragraph --> */}
