@@ -42,7 +42,7 @@ import {
 
 
 
-const page = () => {
+const Shop = () => {
     return (
 
         <div className='max-w-[1920px] mx-auto'>
@@ -328,4 +328,4 @@ border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF] '/>
     )
 }
 
-export default page
+export default Shop
