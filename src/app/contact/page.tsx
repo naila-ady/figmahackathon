@@ -26,7 +26,7 @@ const Contact = () => {
               </div>
     
   {/* signup box */}
-  <div className='bg-[#ffffff] max-w-[1920px] flex flex-row items-center mx-auto
+  <div className='bg-[#ffffff] max-w-[1920px] flex sm:flex-row flex-col items-center mx-auto
          drop-shadow-md shadow-md shadow-[#ff9f0d] gap-4 mt-16 '>
   
   <div className='bg-[#ffffff] max-w-[424px] flex flex-col items-center mx-auto
