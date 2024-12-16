@@ -1,34 +1,109 @@
 import React from 'react'
 import Link from 'next/link'
+import { Input } from "@/components/ui/input"
+import { Checkbox } from "@/components/ui/checkbox"
+import img from "../../../public/assets/or.png"
+import Image from 'next/image';
+
+import { ChevronRight } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div>
-        
-    <section className='w-full bg-[url("/heropic.png")] bg-cover bg-no-repeat
-     bg-center py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28'>
-      <div className='container mx-auto px-4'>
-        <div className='flex flex-col items-center'>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
-          leading-tight text-white font-bold text-center mb-4 sm:mb-6'>
-            Contact us
-          </h1>
-          <div className='text-base sm:text-lg md:text-xl flex gap-2 text-center justify-center'>
-            <Link href="/" className='text-white hover:text-[#FF9F0D] transition-colors duration-300'>
-              Home
-            </Link>
-            <span className='text-white'>/</span>
-            <Link href="/contact" className='text-[#FF9F0D]'>
-              Contact
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
   
+        <div className='max-w-[1920px] mx-auto'>
+          
+                <div className="bg-custom h-[410px] max-w-[1920px]">
+      <h1 className="text-white text-center text-4xl pt-40">Contact Us</h1>
+      <ul className='text-[16px] text-[#FFFFFF] flex justify-center gap-1 list-none'>
+              <Link href={"/"} className=" text-1xl hover:text-[#003152] inline-flex">
+                Home <ChevronRight className=' text-[#FF9F0D]' />
+              </Link>
+              <Link href={"./menu"} className=" text-[#FF9F0D] text-1xl hover:text-[#003152]">
+                Contact
+              </Link>
+              </ul>
+            
+              </div>
+    
+  {/* signup box */}
+  <div className='bg-[#ffffff] max-w-[1920px] flex flex-row items-center mx-auto
+         drop-shadow-md shadow-md shadow-[#ff9f0d] gap-4 mt-16 '>
+  
+  <div className='bg-[#ffffff] max-w-[424px] flex flex-col items-center mx-auto
+         drop-shadow-md shadow-md shadow-[#ff9f0d] gap-4 mt-16 '>
+        <div className='max-w-[360px] text-[#333333] text-base font-normal  mx-auto items-center py-6'>
+        <h1  className='text-[#333333] text-xl font-bold '>Contact Us</h1> 
+        </div>
+         <div className='max-w-[360px] text-[#333333] text-base font-normal space-y-6 mx-auto'> 
+            <Input placeholder=' First Name' type="text" className=' text-[#333333] text-base font-normal'/>
+            <Input placeholder=' Email Address' type="text" className=' text-[#333333] text-base font-normal '   />
+            <Input placeholder='Your City' type="text" className=' text-[#333333] text-base font-normal'/>
+            </div>
+             <div className=' max-w-[424px] space-y-8'>
+                         <h1 className='text-[#333333] text-base font-normal'>
+                 <Checkbox className='bg-[#ff9f0d] max-w[20px]' / >  Place an Order 1</h1>
+                 <Input placeholder=' Proceed to order' type="text" className='max-w[#424px] text-[#ffffff] bg-[#ff9f0d] text-base font-normal'/>
+               </div>
+                  <h1 className='text-[#333333] text-base font-normal border-b-2 border-[#ff9f0d] max-w-[424px]' >Forget password?</h1>
+               <Image src={img} alt={'Orimg'} width={360} height={32} />
+               <div className=' max-w-[624px] text-[#333333] text-base font-normal space-y-8 mx-auto'>
+              <Input placeholder=' Billing Address' type="text" className=' text-[#333333] text-base font-normal'/>
+            <Input placeholder=' Zip Code' type="text" className=' text-[#333333] text-base font-normal'/>
+         </div>
+     </div>
 
-
-
+     {/* 2nd */}
+     <div className='bg-[#ffffff] max-w-[424px] flex flex-col items-center mx-auto
+         drop-shadow-md shadow-md shadow-[#ff9f0d] gap-4 mt-16 '>
+        <div className='max-w-[360px] text-[#333333] text-base font-normal  mx-auto items-center py-6'>
+        <h1  className='text-[#333333] text-xl font-bold '>Contact Us</h1> 
+        </div>
+         <div className='max-w-[360px] text-[#333333] text-base font-normal space-y-6 mx-auto'> 
+            <Input placeholder=' First Name' type="text" className=' text-[#333333] text-base font-normal'/>
+            <Input placeholder=' Email Address' type="text" className=' text-[#333333] text-base font-normal '   />
+            <Input placeholder='Your City' type="text" className=' text-[#333333] text-base font-normal'/>
+            </div>
+             <div className=' max-w-[424px] space-y-8'>
+                         <h1 className='text-[#333333] text-base font-normal'>
+                 <Checkbox className='bg-[#ff9f0d] max-w[20px]' / >  Place an Order 2</h1>
+                 <Input placeholder=' Proceed to order' type="text" className='max-w[#424px] text-[#ffffff] bg-[#ff9f0d] text-base font-normal'/>
+               </div>
+                  <h1 className='text-[#333333] text-base font-normal border-b-2 border-[#ff9f0d] max-w-[424px]' >Forget password?</h1>
+               <Image src={img} alt={'Orimg'} width={360} height={32} />
+               <div className=' max-w-[624px] text-[#333333] text-base font-normal space-y-8 mx-auto'>
+              <Input placeholder=' Billing Address' type="text" className=' text-[#333333] text-base font-normal'/>
+            <Input placeholder=' Zip Code' type="text" className=' text-[#333333] text-base font-normal'/>
+         </div>
+     </div>
+   
+  
+     <div className='bg-[#ffffff] max-w-[424px] flex flex-col items-center mx-auto
+         drop-shadow-md shadow-md shadow-[#ff9f0d] gap-4 mt-16 '>
+        <div className='max-w-[360px] text-[#333333] text-base font-normal  mx-auto items-center py-6'>
+        <h1  className='text-[#333333] text-xl font-bold '>Contact Us</h1> 
+        </div>
+         <div className='max-w-[360px] text-[#333333] text-base font-normal space-y-6 mx-auto'> 
+            <Input placeholder=' First Name' type="text" className=' text-[#333333] text-base font-normal'/>
+            <Input placeholder=' Email Address' type="text" className=' text-[#333333] text-base font-normal '   />
+            <Input placeholder='Your City' type="text" className=' text-[#333333] text-base font-normal'/>
+            </div>
+             <div className=' max-w-[424px] space-y-8'>
+                         <h1 className='text-[#333333] text-base font-normal'>
+                 <Checkbox className='bg-[#ff9f0d] max-w[20px]' / >  Place an Order 3</h1>
+                 <Input placeholder=' Proceed to order' type="text" className='max-w[#424px] text-[#ffffff] bg-[#ff9f0d] text-base font-normal'/>
+               </div>
+                  <h1 className='text-[#333333] text-base font-normal border-b-2 border-[#ff9f0d] max-w-[424px]' >Forget password?</h1>
+               <Image src={img} alt={'Orimg'} width={360} height={32} />
+               <div className=' max-w-[624px] text-[#333333] text-base font-normal space-y-8 mx-auto'>
+              <Input placeholder=' Billing Address' type="text" className=' text-[#333333] text-base font-normal'/>
+            <Input placeholder=' Zip Code' type="text" className=' text-[#333333] text-base font-normal'/>
+         </div>
+     </div>
+   
+  
+        
+       
+</div>
         
 </div>
   )
