@@ -4,9 +4,14 @@ import { Search, Briefcase } from 'lucide-react';
 import { CircleEllipsis, Menu } from 'lucide-react';
 import {
   Select,
+  SelectContent,
+  SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+
+
+
 import {
   Sheet,
   SheetContent,
@@ -41,13 +46,28 @@ const Header = () => {
           <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Blog
           </Link>
-          <Link href={"./pages"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-            Pages
+          <Link href={"./about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+            AboutUs
           </Link>
           <Select>
             <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
-              <SelectValue placeholder="About" />
+              <SelectValue placeholder="Pages" />
             </SelectTrigger>
+            <SelectContent className=''>
+
+              <Link href="../signup" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
+                Sign Up
+              </Link>
+
+              <Link href="../signin" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
+                Sign In
+              </Link>
+
+              <Link href="../error404" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
+                Error 404
+              </Link>
+
+            </SelectContent>
           </Select>
           <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Shop
@@ -55,55 +75,70 @@ const Header = () => {
           <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Contact
           </Link>
-          </ul>
+        </ul>
 
-          <Sheet>
-            <SheetTrigger className="md:hidden text-[#FF9F0D] ">
-              <Menu/>
-            </SheetTrigger>
-            <SheetContent className='bg-white'>
-              <ul className="flex flex-col gap-1 list-none ">
-                <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-                  Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
-                </Link>
-                <Link href={"./menu"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-                  Menu
-                </Link>
-                <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-                  Blog
-                </Link>
-                <Link href={"./pages"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-                  Pages
-                </Link>
-                <Select>
-                  <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
-                    <SelectValue placeholder="About" />
-                  </SelectTrigger>
-                </Select>
-                <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-                  Shop
-                </Link>
-                <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
-                  Contact
-                </Link>
-                </ul>
-            </SheetContent>
-          </Sheet>
-        
+        <Sheet>
+          <SheetTrigger className="md:hidden text-[#FF9F0D] ">
+            <Menu />
+          </SheetTrigger>
+          <SheetContent className='bg-white'>
+            <ul className="flex flex-col gap-1 list-none ">
+              <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
+              </Link>
+              <Link href={"./menu"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                Menu
+              </Link>
+              <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                Blog
+              </Link>
+              <Link href={"./about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                AboutUs
+              </Link>
+              <Select>
+                <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
+                  <SelectValue placeholder="Pages" />
+                </SelectTrigger>
+                <SelectContent className=''>
 
-      {/* Search section */}
-      <div className='relative py-1 inline-flex gap-4'>
-        <input
-          type="text"
-          placeholder='Search...'
-          className='rounded-2xl h-8 pt-3 pr-3 pb-2 pl-5 gap-[10px] font-[inter] text-[16px]
+                  <Link href="../signup" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
+                    Sign Up
+                  </Link>
+
+                  <Link href="../signin" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
+                    Sign In
+                  </Link>
+
+                  <Link href="../error404" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
+                    Error 404
+                  </Link>
+
+                </SelectContent>
+              </Select>
+              <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                Shop
+              </Link>
+              <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+                Contact
+              </Link>
+            </ul>
+          </SheetContent>
+        </Sheet>
+
+
+        {/* Search section */}
+        <div className='relative py-1 inline-flex gap-4'>
+          <input
+            type="text"
+            placeholder='Search...'
+            className='rounded-2xl h-8 pt-3 pr-3 pb-2 pl-5 gap-[10px] font-[inter] text-[16px]
          border-[#FF9F0D] border-2 bg-[#000000] text-[#FFFFFF]'/>
-        <Search className="absolute right-12 top-1/2 transform -translate-y-3 text-[#FFFFFF]" />
-        <Briefcase className='text-[#FF9F0D]' />
+          <Search className="absolute right-12 top-1/2 transform -translate-y-3 text-[#FFFFFF]" />
+          <Briefcase className='text-[#FF9F0D]' />
+        </div>
       </div>
-      </div>
-    
-</header >
+
+    </header >
 
   )
 }

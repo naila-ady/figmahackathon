@@ -8,7 +8,7 @@ import imgh from "../../public/assets/Chefs.png"
 import { Button } from './ui/button'
 const Ourchefs = () => {
   return (
-    // <div className=' max-w-[1920px] flex flex-col flex-wrap py-10 mx-auto'>
+  
     <div className='max-w-[1920px]  flex flex-col bg-[#000000] mx-auto'>
 
       {/* heading Section */}

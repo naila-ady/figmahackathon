@@ -13,3 +13,8 @@
     background-size: cover;
     background-position: center; 
 }
+.bg-custom2{
+    background-image: url('/assets/aboutchefbckground.png');
+    background-size: cover;
+    background-position: center;
+}

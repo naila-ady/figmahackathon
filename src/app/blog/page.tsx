@@ -1,5 +1,5 @@
-import Mainblog from '@/components/mainblog'
-import Sidebarblog from '@/components/Sidebarblog'
+import Mainblog from '../../components/mainblog'
+import Sidebarblog from '../../components/Sidebarblog'
 import React from 'react'
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';

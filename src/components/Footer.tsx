@@ -110,7 +110,7 @@ const Footer = () => {
             <Link href={"#"} className="text-[#FFFFFF] hover:text-[#FF9f0D]">Terms & condition</Link>
           </li>
           <li>
-            <Link href={"#"} className="text-[#FFFFFF] hover:text-[#FF9f0D]">Reporting</Link>
+            <Link href={"./error404"} className="text-[#FFFFFF] hover:text-[#FF9f0D]">Erorr404</Link>
           </li>
           <li>
             <Link href={"#"} className="text-[#FFFFFF] hover:text-[#FF9f0D]">Documentations</Link>
