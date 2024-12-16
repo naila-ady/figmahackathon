@@ -53,7 +53,7 @@ const Header = () => {
             <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
               <SelectValue placeholder="Pages" />
             </SelectTrigger>
-            {/* <SelectContent className=''>
+            <SelectContent className=''>
 
               <Link href="../signup" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
                 Sign Up
@@ -67,7 +67,7 @@ const Header = () => {
                 Error 404
               </Link>
 
-            </SelectContent> */}
+            </SelectContent>
           </Select>
           <Link href={"../shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Shop
@@ -99,7 +99,7 @@ const Header = () => {
                 <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
                   <SelectValue placeholder="Pages" />
                 </SelectTrigger>
-                {/* <SelectContent className=''>
+                <SelectContent className=''>
 
                   <Link href="../signup" className="mr-5 text-1xl text-[#ffffff] hover:text-[#ff9f0d]">
                     Sign Up
@@ -113,7 +113,7 @@ const Header = () => {
                     Error 404
                   </Link>
 
-                </SelectContent> */}
+                </SelectContent>
               </Select>
               <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 Shop
