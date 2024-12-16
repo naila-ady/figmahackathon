@@ -11,8 +11,7 @@ import img7 from "../../../public/assets/us-3.png"
 import img8 from "../../../public/assets/about-chooseus.png"
 import imga from "../../../public/assets/Student.png";
 import imgb from "../../../public/assets/Coffee.png";
-import imgc from "../../../public/assets/Person.png";
-import imgv from "../../../public/assets/aboutchefbckground.png";
+import imgc from "../../../public/assets/Person.png"
 import imgw from "../../../public/assets/about-chefs.png";
 import imgx from "../../../public/assets/about-chefs.png";
 import imgy from "../../../public/assets/about-chefs.png";
