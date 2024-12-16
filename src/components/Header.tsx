@@ -40,13 +40,13 @@ const Header = () => {
           <Link href={"/"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Home <CircleEllipsis className='w-3 h-3 text-[#FF9F0D]' />
           </Link>
-          <Link href={"./menu"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          <Link href={"../menu"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Menu
           </Link>
-          <Link href={"./blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          <Link href={"../blog"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Blog
           </Link>
-          <Link href={"./about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          <Link href={"../about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             AboutUs
           </Link>
           <Select>
@@ -69,10 +69,10 @@ const Header = () => {
 
             </SelectContent> */}
           </Select>
-          <Link href={"./shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          <Link href={"../shop"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Shop
           </Link>
-          <Link href={"./contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+          <Link href={"../contact"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             Contact
           </Link>
         </ul>
