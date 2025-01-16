@@ -33,7 +33,8 @@ const Header = () => {
       </div>
 
       {/* Links and Search section */}
-      <div className='max-w-[1320px] h-[57px] bg-[#0D0D0D] flex flex-row justify-between px-2 ml-2 py-2 mt-3 xl:justify-evenly '>
+      <div className='max-w-[1320px] h-[57px] bg-[#0D0D0D] flex flex-row justify-between
+       px-2 ml-2 py-2 mt-3 xl:justify-evenly '>
 
         {/* Links section */}
         <ul className='max-w-[800px] h-[24px] text-[16px] text-[#FFFFFF] hidden md:flex gap-1 list-none ">'>
