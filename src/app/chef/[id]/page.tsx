@@ -1,6 +1,7 @@
 import React from 'react';
 import { client } from "../../../sanity/lib/client";
 import { urlFor } from '@/sanity/lib/image';
+import Image from 'next/image';
 
 interface chef {
   _id:number;
@@ -24,7 +25,8 @@ async function fetchProducts(): Promise<chef[]> {
     position,
     experience,
     specialty,
-    image,
+    // image,
+    image { asset->{_id, url} },
     description,
     available,
     
@@ -51,7 +53,9 @@ const ChefsPage = async () => {
               src={urlFor(product.image).url()}
               alt={product.name}
               style={{ width: '100%', height: 'auto' }}
+ 
             />
+
             <p>Position:  {product.position}</p>
             <p>Years Of Experience:  {product.experience}</p>
               <p>Specialty:  {product.specialty}</p>

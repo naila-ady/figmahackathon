@@ -2,8 +2,8 @@
 import { createClient } from "next-sanity";
 
 export const client = createClient({
-  projectId:'zu1xko1q', // Should be coming from process.env or env.ts
+  projectId:'zu1xko1q',
   dataset:'production',
-  apiVersion:'2021-08-31',
+  apiVersion:'2024-01-01',
   useCdn: true,
 });

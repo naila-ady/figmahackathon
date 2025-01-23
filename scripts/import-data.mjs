@@ -15,7 +15,7 @@ const client = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   useCdn: false,
   token:"skpRb4IqSrEfiixZw2mvnVXwe8F5uWcV1UpwAxDnNW48LuR37v3J6AmVwInsNtfsPoO6koIdfYbfSGoLB1QJNHUgK5hI7VBibUCIMuVd7PYXTsAGm7pCjlG7bTjAokyhfS4WD7UKX5VQH0oGukPdJppGvjedTC7O3LJYA3tPNYOTtb7uEseD",
-  apiVersion: '2021-08-31',
+  apiVersion: '2024-01-01',
 });
 
 async function uploadImageToSanity(imageUrl) {
