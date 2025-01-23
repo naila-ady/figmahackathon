@@ -189,70 +189,70 @@ const Header = () => {
       <span onClick={toggleCart} className='absolute top-4 right-4 text-[#ff9f0d] cursor-pointer text-2xl'><CircleX /></span>
       <ol className='list-decimal'>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3 text-xl'>DESERTS</div>
-            <div className='w-1/3 text-2xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
+            </span>
+          </p>
         </li>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3 text-xl'>DESERTS</div>
-            <div className='w-1/3  text-2xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
+            </span>
+          </p>
         </li>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3  text-xl'>DESERTS</div>
-            <div className='w-1/3  text-2xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
+            </span>
+          </p>
         </li>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3 text-xl'>DESERTS</div>
-            <div className='w-1/3  text-2xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
+            </span>
+          </p>
         </li>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3 text-xl'>DESERTS</div>
-            <div className='w-1/3 text-2xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
+            </span>
+          </p>
         </li>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3 text-xl'>DESERTS</div>
-            <div className='w-1/3 text-2xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
+            </span>
+          </p>
         </li>
         <li className=''>
-          <div className=' item flex my-5'>
-            <div className='w-2/3  text-xl'>DESERTS</div>
-            <div className='w-1/3 text-xl flex items-center justify-center'>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
               <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </div>
-          </div>
-          <li className=''>
-            <div className=' item flex my-5'>
-              <div className='w-2/3  text-xl'>DESERTS</div>
-              <div className='w-1/3 text-xl flex items-center justify-center'>
-                <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-              </div>
-            </div>
-          </li>
+            </span>
+          </p>
+        </li>
+        <li className=''>
+          <p className=' item flex my-5'>
+            <span className='w-2/3 text-xl'>DESERTS</span>
+            <span className='w-1/3 text-2xl flex items-center justify-center'>
+              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
+            </span>
+          </p>
+        </li>
 
-        </li>
       </ol>
       <div className="flex items-center flex-wrap pb-4 mt-3 w-full">
         <Button className="bg-[#FF9F0D] rounded-full w-[190px] h-[60px] text-lg hover:bg-slate-400" >
