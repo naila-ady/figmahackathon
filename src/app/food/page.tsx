@@ -6,7 +6,6 @@ import { client } from "../../sanity/lib/client";
 import { urlFor } from '@/sanity/lib/image';
 import { Button } from "@/components/ui/button";
 import { Heart, Share2, LayoutGrid } from "lucide-react";
-import Image from 'next/image';
 
 interface Food {
   _id: string;
@@ -32,8 +31,7 @@ const fetchProducts = async (): Promise<Food[]> => {
     price,
     originalPrice,
     tags,
-    // image,
-    image { asset->{_id, url} },
+    image,
     description,
     available
   }`;
@@ -71,7 +69,7 @@ const FoodPage = () => {
           <img
             src={urlFor(selectedFood.image).url()}
             alt={selectedFood.name}
-            style={{ width: '60%', height: 'auto'}}
+            style={{ width: '60%', height: 'auto',  display:"flex" , justifyContent:"center" }}
           />
           <p>{selectedFood.category}</p>
         
@@ -89,8 +87,6 @@ const FoodPage = () => {
             )} </div>
              <p>Description: {selectedFood.description} </p>
             <p> {selectedFood.available ? "Available":"soldout"} </p>
-
-          
 
 
           <div className="mt-2 flex items-center justify-center gap-4 text-sm text-gray-700">
@@ -119,13 +115,10 @@ const FoodPage = () => {
             >
               
               <h2 className='text-3xl font-semibold'>{item.name}</h2>
-              <Image
+              <img
                 src={urlFor(item.image).url()}
                 alt={item.name}
-                // style={{ width: '100%', height: 'auto' }}
-                width={100}
-              height={100}
-
+                style={{ width: '100%', height: 'auto' }}
               />
               <p>{item.category}</p>
               

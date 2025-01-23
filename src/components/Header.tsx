@@ -50,6 +50,14 @@ const Header = () => {
           <Link href={"../about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
             AboutUs
           </Link>
+          <Link href={"../food"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+            Food
+          </Link>
+          <Link href={"../chef"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+            Chef
+          </Link>
+
+
           <Select>
             <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
               <SelectValue placeholder="Pages" />
@@ -96,6 +104,13 @@ const Header = () => {
               <Link href={"./about"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
                 AboutUs
               </Link>
+              <Link href={"../food"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+            Food
+          </Link>
+          <Link href={"../chef"} className="mr-5 text-1xl hover:text-[#ff9f0d]">
+            Chef
+          </Link>
+
               <Select>
                 <SelectTrigger className="w-[78px] h-[24px] text-sm px-2 border-none">
                   <SelectValue placeholder="Pages" />
