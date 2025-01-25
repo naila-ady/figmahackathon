@@ -1,5 +1,5 @@
 // "use client"
-// // app/product/[slug]/page.tsx
+// app/product/[slug]/page.tsx
 // import Image from "next/image"
 // import { Button } from "@/components/ui/button"
 // import img from "../../../../public/assets/blog-img2.png"
