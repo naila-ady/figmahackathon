@@ -64,13 +64,13 @@ const FoodPage = () => {
 <h1 className='text-6xl font-extrabold mx-auto flex justify-center text-[#ff9f0d]'>HOT DEALS</h1>
       {selectedFood ? (
         // If a food item is selected, show its details
-        <div style={{ border: '1px solid #ccc',  padding: '20px',display:"flex", flexDirection:"column", justifyContent:"center" }}>
+        <div  key={selectedFood._id} style={{ border: '1px solid #ccc',  padding: '20px',display:"flex", flexDirection:"column", justifyContent:"center" }}>
          
           <h2 className='text-3xl font-semibold'>{selectedFood.name}</h2>
           <img
             src={urlFor(selectedFood.image).url()}
             alt={selectedFood.name}
-            style={{ width: '60%', height: 'auto',  display:"flex" , justifyContent:"center" }}
+            style={{ width: '60%', height: 'auto'}}
           />
           <p>{selectedFood.category}</p>
         

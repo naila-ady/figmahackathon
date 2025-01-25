@@ -1,14 +1,15 @@
 "use client"
 import React, { useRef } from 'react'
 import Link from 'next/link'
-import { Search, Briefcase, CircleX, CirclePlus, CircleMinus } from 'lucide-react';
-import { CircleEllipsis, Menu, ShoppingCart, ShoppingBasket } from 'lucide-react';
-import { Button } from "@/components/ui/button"
+import { Search, Briefcase } from 'lucide-react';
+import { CircleEllipsis, Menu } from 'lucide-react';
+import { transform } from 'next/dist/build/swc';
+import { Translate } from 'sanity';
+// import Cart from "../components/Cart"
 
 import {
   Select,
   SelectContent,
-  SelectItem,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
@@ -20,32 +21,11 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { transform } from 'next/dist/build/swc';
-import { Translate } from 'sanity';
 
 
 
-const Header = () => {
-  const toggleCart = () => {
-    //   if (ref.current.classList.contains('translate-x-full')){
-    //        ref.current.classList.remove('translate-x-full')
-    //        ref.current.classList.add('translate-x-0')
-    //   }
-    //   else if 
-    //     (!ref.current.classList.contains('translate-x-full')){
-    //       ref.current.classList.remove('translate-x-0')
-    //       ref.current.classList.add('translate-x-full')
-    //  }
-    if (ref.current) {
-      ref.current.classList.toggle('translate-x-full');
-      ref.current.classList.toggle('translate-x-0');
-    }
-  } 
-
-
-
-     const ref = useRef<HTMLDivElement>(null);;
-     return (
+ const Header = () => {
+   return(
 
   //header
   <header className='max-w-[1920px] h-[107px] bg-[#0D0D0D] flex flex-col mx-auto'>
@@ -113,6 +93,8 @@ const Header = () => {
 
       <Sheet>
         <SheetTrigger className="md:hidden text-[#FF9F0D] ">
+        
+
           <Menu />
         </SheetTrigger>
         <SheetContent className='bg-white'>
@@ -175,95 +157,16 @@ const Header = () => {
           className='rounded-2xl h-8 pt-3 pr-3 pb-2 pl-5 gap-[10px] font-[inter] text-[16px]
          border-[#FF9F0D] border-2 bg-[#000000] text-[#FFFFFF]'/>
         <Search className="absolute right-12 top-1/2 transform -translate-y-3 text-[#FFFFFF]" />
-        <Briefcase className='text-[#FF9F0D]' />
+         <Briefcase className='text-[#FF9F0D]' />
       </div>
-    </div>
+    
 
-    {/* sidebar */}
-    <div onClick={toggleCart} className='cart absolute right-80 top-14 cursor-pointer'>
-      <ShoppingCart className='text-[#FF9F0D] text-xl md:text2xl' />
-    </div>
-    <div ref={ref} className='sidecart absolute bg-[#ffffff] w-64 top-0 right-0 py-10 px-6 transform
-       transition-transform translate-x-full'>
-      <h2 className=' font-bold text-xl text-center text-[#ff9f0d]'>SHOPPING CART</h2>
-      <span onClick={toggleCart} className='absolute top-4 right-4 text-[#ff9f0d] cursor-pointer text-2xl'><CircleX /></span>
-      <ol className='list-decimal'>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-        <li className=''>
-          <p className=' item flex my-5'>
-            <span className='w-2/3 text-xl'>DESERTS</span>
-            <span className='w-1/3 text-2xl flex items-center justify-center'>
-              <CircleMinus className='cursor-pointer text-[#ff9f0d]' /><span className='text-xl mx-3'>1</span><CirclePlus className='cursor-pointer text-[#ff9f0d]' />
-            </span>
-          </p>
-        </li>
-
-      </ol>
-      <div className="flex items-center flex-wrap pb-4 mt-3 w-full">
-        <Button className="bg-[#FF9F0D] rounded-full w-[190px] h-[60px] text-lg hover:bg-slate-400" >
-          <ShoppingBasket/>CHECK OUT</Button>
-      </div>
-    </div>
-
-
+  </div>
+  {/* </Cart> */}
+  
   </header >
+   )
 
-)
 }
 
 export default Header

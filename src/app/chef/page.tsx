@@ -1,7 +1,6 @@
 import React from 'react';
 import { client } from "../../sanity/lib/client";
 import { urlFor } from '@/sanity/lib/image';
-import Image from 'next/image';
 
 interface chef {
   _id: number;
@@ -20,13 +19,13 @@ interface chef {
 
 async function fetchProducts(): Promise<chef[]> {
   const query = `*[_type == "chef"] {
-    
+     _id,
     name,
     position,
     experience,
     specialty,
-    // image,
-    image { asset->{_id, url} },
+    image,
+    // image { asset->{_id, url} },
     description,
     available,
     
@@ -42,12 +41,14 @@ async function fetchProducts(): Promise<chef[]> {
 const ChefsPage = async () => {
   const chef = await fetchProducts();
 
+  console.log(chef)
+
   return (
     <div>
       <h1 className='text-6xl font-extrabold mx-auto flex justify-center text-[#ff9f0d]'>OUR EXPERT CHEFS</h1>
       <div className='grid grid-cols-3 mx-auto py-4 px-4 gap-7'>
         {chef.map((product) => (
-          <div style={{ border: '1px solid #ccc', gap: '4px', padding: '20px', width: '400px', backgroundColor: 'wheat' }}>
+          <div key={product._id} style={{ border: '1px solid #ccc', gap: '4px', padding: '20px', width: '400px', backgroundColor: 'wheat' }}>
             <h2>{product.name}</h2>
             <img
               src={urlFor(product.image).url()}

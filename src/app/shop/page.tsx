@@ -90,9 +90,11 @@ const Shop = () => {
                     
                     <div className='grid sm:grid-cols-3 gap-6  items-center grid-cols-1 '>
                         <div className='max-w-[312px]'>
+                            <Link href={"./product/slug"}>
                             <Image src={img1} alt={'photogalleryimg'} width={312} height={267} />
-                            <h1 className='text-lg font-bold text-[#333333]'>Fresh Lime</h1>
+                            <h1 className='text-lg font-bold text-[#333333]'>Chowmin</h1>
                             <p className='text-base text-[#ff9f0d] font-normal'>$38.00</p>
+                            </Link> 
                         </div>
                         <div className='max-w-[312px]'>
                             <Image src={img2} alt={'photogalleryimg'} width={312} height={267} />
