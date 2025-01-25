@@ -3,11 +3,11 @@ import Image from 'next/image';
 import img1 from "../../../public/assets/MaskGroup1.png"
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
 <div className='grid sm:grid-cols-4 gap-6 py-6 px-6 items-center grid-cols-1 '>
 <div className='max-w-[312px]'>
-    <Link href={"./shop"}>
+    <Link href={"./product/slug"}>
     <Image src={img1} alt={'photogalleryimg'} width={312} height={267} />
     </Link>
     <h1 className='text-lg font-bold text-[#333333]'>Fresh Lime</h1>
@@ -59,4 +59,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
