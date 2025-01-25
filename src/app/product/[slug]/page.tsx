@@ -15,7 +15,7 @@ export default function Product({ params }: { params: { slug: string } }) {
   const checkServiceability = async () => {
     try {
       // Fetch the list of available pins from the API
-      let pinsResponse = await fetch('http://localhost:3000/api/hello');
+      let pinsResponse = await fetch('http://localhost:3000/api/auth/hello');
       let pinsJson = await pinsResponse.json();
 
       // Check if the entered pin exists in the list of serviceable pins
