@@ -6,6 +6,7 @@ import { client } from "../../sanity/lib/client";
 import { urlFor } from '@/sanity/lib/image';
 import { Button } from "@/components/ui/button";
 import { Heart, Share2, LayoutGrid } from "lucide-react";
+import Link from 'next/link';
 
 interface Food {
   _id: string;
@@ -21,6 +22,10 @@ interface Food {
   };
   description: string;
   available: boolean;
+  slug:{
+    _type:"slug";
+    current:string;
+};
 }
 
 const fetchProducts = async (): Promise<Food[]> => {
@@ -61,24 +66,24 @@ const FoodPage = () => {
 
     <div>
 
-<h1 className='text-6xl font-extrabold mx-auto flex justify-center text-[#ff9f0d]'>HOT DEALS</h1>
+<h1 className='text-6xl font-extrabold mx-auto flex justify-center  text-[#ff9f0d]'>HOT DEALS</h1>
       {selectedFood ? (
         // If a food item is selected, show its details
-        <div  key={selectedFood._id} style={{ border: '1px solid #ccc',  padding: '20px',display:"flex", flexDirection:"column", justifyContent:"center" }}>
+        <div  key={selectedFood._id} style={{ border: '1px solid #ccc',  padding: '20px',display:"flex",
+         flexDirection:"column", justifyContent:"center" , alignItems:"center"}}>
          
-          <h2 className='text-3xl font-semibold'>{selectedFood.name}</h2>
+          <h2 className='text-3xl font-semibold '>{selectedFood.name}</h2>
           <img
             src={urlFor(selectedFood.image).url()}
             alt={selectedFood.name}
             style={{ width: '60%', height: 'auto'}}
           />
-          <p>{selectedFood.category}</p>
+          <p className='text-xl font-medium'>{selectedFood.category}</p>
         
-          <p>Current Price: ${selectedFood.price}</p>
-          <p>CurrentPrice:`${selectedFood.price}`</p>
-             <p>OriginalPrice:`${selectedFood.originalPrice}` </p>
-              <div>Tags:{Array.isArray (selectedFood.tags) && selectedFood.tags.length > 0 ? (
-              <ul>
+          <p className='text-xl font-medium'>Current Price: ${selectedFood.price}</p>
+                   <p className='text-xl font-medium'>OriginalPrice:`${selectedFood.originalPrice}` </p>
+              <div className='text-xl font-medium'>Tags:{Array.isArray (selectedFood.tags) && selectedFood.tags.length > 0 ? (
+              <ul className='text-xl font-medium'>
                 {selectedFood.tags.map((tag, i) => (
                   <li key={i}>{tag}</li>
                 ))}
@@ -86,21 +91,27 @@ const FoodPage = () => {
             ) : (
               <p>No tags available</p>
             )} </div>
-             <p>Description: {selectedFood.description} </p>
-            <p> {selectedFood.available ? "Available":"soldout"} </p>
-
+             <p className='text-xl font-medium'>Description: {selectedFood.description} </p>
+            <p className='text-xl font-medium'> {selectedFood.available ? "Available":"soldout"} </p>
+            <Link href={"./"}>
+            <Button className="w-52 rounded bg-black py-2 text-sm font-medium text-white hover:bg-black/90">
+             Add to cart
+            </Button>
+            </Link>
+ 
+            
 
           <div className="mt-2 flex items-center justify-center gap-4 text-sm text-gray-700">
-            <button className="flex items-center gap-1 hover:text-black">
-              <Share2 className="h-4 w-4" />
+            <button className="flex items-center gap-1 text-[#ff9f0d] hover:text-black">
+              <Share2 className="h-6 w-6" />
               Share
             </button>
-            <button className="flex items-center gap-1 hover:text-black">
-              <LayoutGrid className="h-4 w-4" />
+            <button className="flex items-center gap-1 text-[#ff9f0d] hover:text-black">
+              <LayoutGrid className="h-6 w-6" />
               Compare
             </button>
-            <button className="flex items-center gap-1 hover:text-black">
-              <Heart className="h-4 w-4" />
+            <button className="flex items-center gap-1 text-[#ff9f0d] hover:text-black">
+              <Heart className="h-6 w-6" />
               Like
             </button>
           </div>
@@ -137,5 +148,4 @@ const FoodPage = () => {
 };
 
 export default FoodPage;
-
 

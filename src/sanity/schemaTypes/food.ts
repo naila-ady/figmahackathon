@@ -1,3 +1,5 @@
+
+
 export default {
     name: 'food',
     type: 'document',
@@ -7,6 +9,14 @@ export default {
         name: 'name',
         type: 'string',
         title: 'Food Name',
+      },
+      {
+        name:'slug',
+        type:'slug',
+        title:'Slug',
+        options:{
+         source:'name'
+      }
       },
       {
         name: 'category',
@@ -56,6 +66,12 @@ export default {
         title: 'Available',
         description: 'Availability status of the food item',
       },
+      {
+        name:'inventory',
+        type:'number',
+        title:'Inventory',
+        
+      }
     ],
   };
   

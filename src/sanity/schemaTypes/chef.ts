@@ -9,6 +9,14 @@ export default {
         title: 'Chef Name',
       },
       {
+        name:'slug',
+        type:'slug',
+        title:'Slug',
+        Options:{
+         souurce:'name'
+      },
+      },
+      {
         name: 'position',
         type: 'string',
         title: 'Position',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { client } from "../../sanity/lib/client";
 import { urlFor } from '@/sanity/lib/image';
+import Image from 'next/image';
 
 interface chef {
   _id: number;
@@ -50,9 +51,11 @@ const ChefsPage = async () => {
         {chef.map((product) => (
           <div key={product._id} style={{ border: '1px solid #ccc', gap: '4px', padding: '20px', width: '400px', backgroundColor: 'wheat' }}>
             <h2>{product.name}</h2>
-            <img
+            <Image
               src={urlFor(product.image).url()}
               alt={product.name}
+              width={500}
+              height={500}
               style={{ width: '100%', height: 'auto' }}
                />
                       <p>Position:  {product.position}</p>

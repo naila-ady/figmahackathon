@@ -16,6 +16,7 @@ import imgb from "../../../public/assets/product-20.png"
 import imgc from "../../../public/assets/star.png"
 
 import { Slider } from "@/components/ui/slider"
+import CustomerCare from '@/components/CustomerCare';
 
 
 import { Checkbox } from "@/components/ui/checkbox"
@@ -110,13 +111,13 @@ const Shop = () => {
                         </div>
                         <div className='max-w-[312px]'>
                             <Image src={img4} alt={'photogalleryimg'} width={312} height={267} />
-                            <h1 className='text-lg font-bold text-[#333333]'>Country Burger</h1>
+                            <h1 className='text-lg font-bold text-[#333333]'>Fresh Lime</h1>
                             <p className='text-base text-[#ff9f0d] font-normal'>$45.00</p>
 
                         </div>
                         <div className='max-w-[312px]'>
                             <Image src={img5} alt={'photogalleryimg'} width={312} height={267} />
-                            <h1 className='text-lg font-bold text-[#333333]'>Drink</h1>
+                            <h1 className='text-lg font-bold text-[#333333]'>Country Burger</h1>
                             <p className='text-base text-[#ff9f0d] font-normal'>$28.00</p>
 
                         </div>
@@ -146,13 +147,13 @@ const Shop = () => {
                         </div>
                         <div className='max-w-[312px]'>
                             <Image src={img4} alt={'photogalleryimg'} width={312} height={267} />
-                            <h1 className='text-lg font-bold text-[#333333]'>Country burger</h1>
+                            <h1 className='text-lg font-bold text-[#333333]'>Fresh Lime</h1>
                             <p className='text-base text-[#ff9f0d] font-normal'>$38.00</p>
 
                         </div>
                         <div className='max-w-[312px]'>
                             <Image src={img5} alt={'photogalleryimg'} width={312} height={267} />
-                            <h1 className='text-lg font-bold text-[#333333]'>Drink</h1>
+                            <h1 className='text-lg font-bold text-[#333333]'>Country Burger</h1>
                             <p className='text-base text-[#ff9f0d] font-normal'>$38.00</p>
 
                         </div>
@@ -329,5 +330,5 @@ border-[#FF9F0D] border-2 bg-orange-100 text-[#FFFFFF] '/>
         
     )
 }
-
+    <CustomerCare/>
 export default Shop
