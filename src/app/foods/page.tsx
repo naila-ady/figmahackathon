@@ -35,11 +35,11 @@ const FoodListPage = () => {
         };
         getFoodData(); // Fetch food data
     }, []);
-
+    
     // Handle adding an item to the cart
     const handleAddtoCart = (e: React.MouseEvent, food: Food) => {
         e.preventDefault();
-
+        
         // Show success message
         Swal.fire({
             position: "top-right",
@@ -48,10 +48,11 @@ const FoodListPage = () => {
             showConfirmButton: false,
             timer: 1000,
         });
-
+        
         // Add the item to cart
         addtocart(food);
     };
+    
 
     return (
         <div>

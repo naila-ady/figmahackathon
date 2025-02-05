@@ -30,7 +30,7 @@ export default async function productpage({params}:FoodPageProps){
   const {slug} = await params;
   const food = await getFood(slug)
 //   console.log('Slug:', slug);
-// console.log('Food:', food);
+//  console.log('Food:', food);
 
 
 

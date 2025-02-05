@@ -12,8 +12,8 @@ export const projectId = assertValue(
 )
 
 export const token = assertValue(
-  'skpRb4IqSrEfiixZw2mvnVXwe8F5uWcV1UpwAxDnNW48LuR37v3J6AmVwInsNtfsPoO6koIdfYbfSGoLB1QJNHUgK5hI7VBibUCIMuVd7PYXTsAGm7pCjlG7bTjAokyhfS4WD7UKX5VQH0oGukPdJppGvjedTC7O3LJYA3tPNYOTtb7uEseD',
-  'Missing environment variable: SANITY_API_TOKEN'
+  "skpRb4IqSrEfiixZw2mvnVXwe8F5uWcV1UpwAxDnNW48LuR37v3J6AmVwInsNtfsPoO6koIdfYbfSGoLB1QJNHUgK5hI7VBibUCIMuVd7PYXTsAGm7pCjlG7bTjAokyhfS4WD7UKX5VQH0oGukPdJppGvjedTC7O3LJYA3tPNYOTtb7uEseD",
+  'Missing environment variable:SANITY_API_TOKEN'
 )
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
