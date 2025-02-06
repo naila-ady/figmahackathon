@@ -73,6 +73,7 @@ const Checkoutpage = () => {
 
   // Validate form fields
   const formValidate = () => {
+    console.log(formValue);
     const errors = {
       firstname: !formValue.firstname,
       lastname: !formValue.lastname,
@@ -134,7 +135,7 @@ const Checkoutpage = () => {
         _type: 'reference',
         _ref: item._id
       })),
-      discount: discount,
+    
       orderDate: new Date().toISOString()
     };
     console.log('Order data:', orderData);

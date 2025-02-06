@@ -18,7 +18,7 @@ export default {
         },
         {
             name: 'phone',
-            type: 'number',
+            type: 'string',
             title: 'Phone',
         },
         {
@@ -33,7 +33,7 @@ export default {
         },
         {
             name: 'streetNumber',
-            type: 'number',
+            type: 'string',
             title: 'StreetNumber',
         },
         {
@@ -48,7 +48,7 @@ export default {
         },
         {
             name: 'postalzipcode',
-            type: 'number',
+            type: 'string',
             title: 'PostalzipCode',
         },
         {

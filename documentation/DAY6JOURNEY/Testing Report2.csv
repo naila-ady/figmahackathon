@@ -1,0 +1,8 @@
+ID,Title,Actions,Expected Outcome,Actual Outcome,Status,,,Notes
+CHECK NO 1,Verify Product Page Display,Open the Products Page > Confirm Products Visibility,Products should appear correctly,Products displayed correctly,Matched,,,No issues detected
+CHECK NO 2,Test API Error Response,Disconnect Gorq Query > Refresh the page,An error message should be visible,Error message displayed,Matched,,,Handled well
+CHECK NO 3,Validate Cart Operations,Add items to the cart > Navigate to Cart,Cart should show added products,Cart displays added products,Successful,,,Operations okay
+CHECK NO 4,Check Mobile View Responsiveness,Use Device Toolbar > Select Mobile View,Page should adjust content for mobile,Page content adjusted as per mobile view,Successful,,,Works well on mobile
+CHECK NO 5,Test Search Results,Search for non-listed items,"""No products found"" should be shown",No product results dropdown shown,Issue,,,Missing error message
+CHECK NO 6,Verify Dynamic Product Details,Open any product page from the list,Product details page should open,Product detail page opened correctly,Successful,,,Page loaded fine
+CHECK NO 7,Cross-browser Functionality,"Open the website on browsers like Chrome, Edge, etc.",The website should be functional on all browsers,Website displayed correctly on all browsers,Successful,,,Consistent behavior

@@ -162,6 +162,7 @@ const Header = () => {
          border-[#FF9F0D] border-2 bg-[#000000] text-[#FFFFFF]'/>
           <Search className="absolute right-12 top-1/2 transform -translate-y-3 text-[#FFFFFF]" />
         </div>
+        <div className='flex flex-col sm:flex-row gap-4'>
         <Link href="./">
           <Briefcase className='text-[#FF9F0D]' />
         </Link>
@@ -169,9 +170,9 @@ const Header = () => {
           <ShoppingCart className="text-[#FF9F0D] text-xl md:text-2xl" />
         </Link>
         <Link href="./comparison">
-          <FaBalanceScale className='icon text-[#FF9F0D] text-xl md:text-2xl' /> Compare
-
+          <FaBalanceScale className='icon text-[#FF9F0D] text-xl md:text-2xl' />
         </Link>
+        </div>
 
 
 
