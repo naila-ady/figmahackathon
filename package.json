@@ -10,6 +10,8 @@
     "import": "node scripts/import-data.mjs"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.22.11",
+    "@clerk/nextjs": "^6.11.1",
     "@headlessui/react": "^2.2.0",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-checkbox": "^1.1.3",

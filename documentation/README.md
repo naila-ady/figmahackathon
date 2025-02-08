@@ -4,8 +4,8 @@ Welcome to the Market Place Hackathon repository! This project demonstrates a fe
 Features:
 Dynamic Product Management: Add, update, and view product details seamlessly.
 Interactive UI: Built with Next.js for a responsive and dynamic interface.
-Third-Party API Integrations:
-Payment Gateway Integration for secure transactions.
+Third-Party API Integrations
+Add to cart and checkout facility
 Real-time analytics and user activity tracking.
 Scalable Content Management: Powered by Sanity CMS for efficient data handling.
 Optimized Performance: Fast-loading pages with efficient resource usage.
